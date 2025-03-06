@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>迎新活動報名</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            padding: 20px;
+            background: linear-gradient(135deg, #1c1c1c, #2c2c2c); /* 深色漸層背景 */
+            color: #fff;
+        }
+
+       
+        form {
+            background: #2c2c2c;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 179, 71, 0.2), 0 4px 8px rgba(0, 0, 0, 0.3);
+            max-width: 500px; 
+            margin: 0 auto;   /* 讓表單置中 */
+        }
+
+        /* 漸層文字標題 */
+        h1 {
+            text-align: center;
+            background: linear-gradient(90deg, #f39c12, #e74c3c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1em;
+        }
+
+        
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #555;
+            border-radius: 5px;
+            background-color: #1c1c1c;
+            color: #fff;
+        }
+        
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #e74c3c;
+            box-shadow: 0 0 5px #e74c3c;
+        }
+
+        
+        input[type="submit"] {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #c0392b;
+            box-shadow: 0 0 10px #e74c3c, 0 0 20px #e74c3c;
+        }
+
+       
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            color: #66ccff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>迎新活動報名表</h1>
+    <form action="#" method="post">
+        <label for="name">姓名:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">電子郵件:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="department">系所:</label>
+        <input type="text" id="department" name="department" required>
+
+        <label for="message">留言:</label>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea>
+
+        <input type="submit" value="提交報名">
+    </form>
+    <div style="text-align: center;">
+        <a href="homework2.html">返回首頁</a>
+    </div>
+</body>
+</html>
